@@ -1,2 +1,12 @@
 
 HelloWorld/HelloWorld.pro.user
+*.exe
+*.stash
+*.Debug
+ACM_begin/build-Uva10082-Desktop_Qt_5_9_7_MinGW_32bit-Debug/Makefile
+*.Release
+*.o
+算法竞赛入门经典（第2版）—练习/build-Uva272-Desktop_Qt_5_9_7_MinGW_32bit-Debug/Makefile
+*.pro
+*.pro
+*.pro
