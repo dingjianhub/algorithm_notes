@@ -17,7 +17,7 @@ is the question".
 is the question''. 
 ```
 
-![Uva272](https://github.com/dingjianhub/algorithm_notes/blob/master/AOAPC%20II%20Beginning%20Algorithm%20Contests%20(Second%20Edition)%20(Rujia%20Liu)/Uva_OJ_Notes/pics/Uva272.png)
+![Uva272](https://github.com/dingjianhub/algorithm_notes/raw/master/pics/Uva272.png)
 
 ## 2. 思路解析
 
