@@ -21,7 +21,7 @@ is the question".
 is the question''. 
 ```
 
-![Uva272](pics\Uva272.png)
+![Uva272](..pics\Uva272.png)
 
 ## 2. 思路解析
 
