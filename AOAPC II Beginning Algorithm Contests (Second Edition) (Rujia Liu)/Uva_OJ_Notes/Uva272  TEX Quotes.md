@@ -1,3 +1,7 @@
+---
+typora-copy-images-to: pics
+---
+
 # Uva272  TEX Quotes
 
 [Uva OJ 题目地址](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=829&page=show_problem&problem=208)
@@ -17,7 +21,7 @@ is the question".
 is the question''. 
 ```
 
-![1556624044996](C:\Users\jerry\AppData\Roaming\Typora\typora-user-images\1556624044996.png)
+![Uva272](pics\Uva272.png)
 
 ## 2. 思路解析
 
