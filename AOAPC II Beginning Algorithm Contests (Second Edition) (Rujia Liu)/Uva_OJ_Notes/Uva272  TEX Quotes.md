@@ -1,7 +1,3 @@
----
-typora-copy-images-to: pics
----
-
 # Uva272  TEX Quotes
 
 [Uva OJ 题目地址](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=829&page=show_problem&problem=208)
@@ -21,7 +17,7 @@ is the question".
 is the question''. 
 ```
 
-![Uva272](..pics\Uva272.png)
+![Uva272](https://github.com/dingjianhub/algorithm_notes/blob/master/AOAPC%20II%20Beginning%20Algorithm%20Contests%20(Second%20Edition)%20(Rujia%20Liu)/Uva_OJ_Notes/pics/Uva272.png)
 
 ## 2. 思路解析
 
