@@ -6,16 +6,16 @@
 
 那就现在开始吧……
 
-| question_id | note_url | type             | language | O(n) | T(n) |
-| ----------- | -------- | ---------------- | -------- | ---- | ---- |
-| Uva272      |          | array and string | C        |      |      |
-|             |          |                  |          |      |      |
-|             |          |                  |          |      |      |
-|             |          |                  |          |      |      |
-|             |          |                  |          |      |      |
-|             |          |                  |          |      |      |
-|             |          |                  |          |      |      |
-|             |          |                  |          |      |      |
+| question_id | note_url                                                     | type             | language |
+| ----------- | ------------------------------------------------------------ | ---------------- | -------- |
+| Uva272      | [Uva272 Notes](https://github.com/dingjianhub/algorithm_notes/blob/master/AOAPC%20II%20Beginning%20Algorithm%20Contests%20(Second%20Edition)%20(Rujia%20Liu)/Uva_OJ_Notes/Uva272%20%20TEX%20Quotes.md) | array and string | C        |
+| Uva10082    | [Uva10082 Notes](https://github.com/dingjianhub/algorithm_notes/blob/master/AOAPC%20II%20Beginning%20Algorithm%20Contests%20(Second%20Edition)%20(Rujia%20Liu)/Uva_OJ_Notes/Uva10082%20%20WERTYU.md) | array and string | C        |
+|             |                                                              |                  |          |
+|             |                                                              |                  |          |
+|             |                                                              |                  |          |
+|             |                                                              |                  |          |
+|             |                                                              |                  |          |
+|             |                                                              |                  |          |
 
 
 
