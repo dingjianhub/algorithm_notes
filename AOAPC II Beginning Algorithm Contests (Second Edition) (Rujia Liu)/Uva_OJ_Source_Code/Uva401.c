@@ -5,7 +5,6 @@ const char *r = "A   3  HIL JM O   2TUVWXY51SE Z  8 ";
 const char *msg[] = {"is not a palindrome.","is a regular palindrome.",
                      "is a mirrored string.","is a mirrored palindrome."};
 
-
 int main()
 {
     char s[25];
@@ -29,13 +28,5 @@ int main()
         printf("%s -- %s\n\n",s,msg[m*2+p]);
         p = m = 1;
     }
-//    printf("Hello World!\n");
     return 0;
 }
-
-/*
-NOTAPALINDROME
-ISAPALINILAPASI
-2A3MEAS
-ATOYOTA
-*/

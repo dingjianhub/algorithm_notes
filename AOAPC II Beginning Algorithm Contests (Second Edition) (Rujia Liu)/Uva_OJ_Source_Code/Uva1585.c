@@ -28,15 +28,5 @@ int main()
         }
         printf("%d\n",sum);
     }
-    //printf("Hello World!\n");
     return 0;
 }
-
-/*
-5
-OOXXOXXOOO
-OOXXOOXXOO
-OXOXOXOXOXOXOX
-OOOOOOOOOO
-OOOOXOOOOXOOOOX
-*/

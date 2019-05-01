@@ -4,23 +4,9 @@
 
 char s[85];
 double n[] = {12.01,1.008,16.00,14.01};
-//char name[] = {'C','H','O','N'};
-
-//typedef struct mol{
-//    char name;
-//    double n;
-//}mol;
 
 int main()
 {
-//    mol C;{
-//        C.name = 'C';
-//        C.n = 12.01;
-//    }
-//    mol H;{
-//        H.name = 'H';
-//        H.n = 1.008;
-//    }
     int q;
     scanf("%d",&q);
     while (q--) {
@@ -29,7 +15,6 @@ int main()
         double sum = 0;
         for (int i = 0;i < len;i++){
             while (isalpha(s[i]) && i < len) {
-                //char plus[] = "00000000";
                 char plus[10];
                 char tmp = s[i];
                 i++;//开始处理数字部分
@@ -72,16 +57,8 @@ int main()
                     }
                 } //end switch
             } // end while of
-        }//end for
+        } //end for
         printf("%.3f\n",sum);
-    }//end scanf while loop
+    } //end scanf while loop
     return 0;
 }
-
-/*
-4
-C
-C6H5OH
-NH2CH2COOH
-C12H22O11
-*/

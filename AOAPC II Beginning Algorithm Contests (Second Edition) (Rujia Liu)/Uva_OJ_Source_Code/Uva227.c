@@ -9,7 +9,7 @@ int main()
     char t;
     int q_sum= 0;
     while (scanf("%c",&t) && t != 'Z') {
-        if (q_sum) printf("\n");
+        if (q_sum) printf("\n"); //如果还有情况要处理，补上上一次输出后应该要有的一个空行（极易发生PE）
         q_sum++;// puzzle_case++;
         map[0][0] = t;
         for (int i = 1;i < 5;i++) scanf("%c",&map[0][i]);
@@ -29,10 +29,10 @@ int main()
         while (fgets(&direction[tmp_dirc_sum],2,stdin) && direction[tmp_dirc_sum] != '0') {
             tmp_dirc_sum++;
         }
-        int dirc_sum = 0;
-        for (int i = 0;i < tmp_dirc_sum;i++){
-            if (direction[i] != 'A' - 33) dirc_sum++;
-        }
+//        int dirc_sum = 0;
+//        for (int i = 0;i < tmp_dirc_sum;i++){
+//            if (direction[i] != 'A' - 33) dirc_sum++;
+//        }
         //开始处理方向的问题
         //首先定位空格位置
         int p_x = 0,p_y = 0;
@@ -109,7 +109,7 @@ int main()
                 case '\n':{
                     break;
                 }
-                default:{
+                default:{ //如果出现了除去 “ABLR” 以外的字符，则为非法情况，直接输出无解
                     printf("Puzzle #%d:\n",q_sum);
                     printf("This puzzle has no final configuration.\n");
                     flag = 1;
@@ -120,22 +120,13 @@ int main()
                 break;
             }
         }
-        if (!flag){ // 注意输出格式！需要添加多余的空格和换行！
+        if (!flag){ // 注意输出格式！需要添加额外的空格和换行！
             printf("Puzzle #%d:\n",q_sum);
-//            for (int i = 0;i < 5;i++){
-//                for (int k = 0;k < 5;k++){
-//                    if (k == 0) printf("%c",map[i][k]);
-//                    else printf(" %c",map[i][k]);
-//                }
-//            }
             for (int i = 0;i < 5;i++){
                 printf("%c %c %c %c %c\n",map[i][0],map[i][1],map[i][2],map[i][3],map[i][4]);
-//                printf("\n");
             }
-            //printf("\n");
         }
         getchar();
-        //printf("the dirc_sum is %d\n",dirc_sum);
     }
     return 0;
 }
@@ -161,99 +152,6 @@ int main(){
 }
 */
 
-/*
- BCDE
-FGHIJ
-KLMNO
-PQRSY
-TUVWX
-L0
-Z
-ABCD
-FGHIJ
-KLMNO
-PQRSY
-TUVWX
-RRRRA
-AAA0
-Z
-*/
-/*
-TRGSJ
-XDOKI
-M VLN
-WPABE
-UQHCF
-ARRBBL0
-ABCDE
-FGHIJ
-KLMNO
-PQRS
-TUVWX
-AAA
-LLLL0
-ABCDE
-FGHIJ
-KLMNO
-PQRS
-TUVWX
-AAAAABBRRRLL0
-Z
-*/
-
-/*
-Puzzle #1:
-T R G S J
-X O K L I
-M D V B N
-W P A E
-U Q H C F
-Puzzle #2:
-A B C D
-F G H I E
-K L M N J
-P Q R S O
-T U V W X
-Puzzle #3:
-This puzzle has no final configuration.
-
-
-Puzzle #1:
-This puzzle has no final configuration.
-
-Puzzle #2:
-This puzzle has no final configuration.
-
-Puzzle #3:
-T R G S J
-X O K L I
-M D V B N
-W P   A E
-U Q H C F
-
-Puzzle #4:
-This puzzle has no final configuration.
-
-Puzzle #5:
-This puzzle has no final configuration.
-
-Puzzle #6:
-This puzzle has no final configuration.
-
-
-Puzzle #3:
-T R G S J
-X O K L I
-M D V B N
-W P   A E
-U Q H C F
-
- BCDE
-
-Puzzle #1:
-This puzzle has no final configuration.
-
-*/
 /*
 这题debug了好久，一直都没有找到错误，后来发现，是因为样例数据的格式有些神奇...
 比较难调，以及有些别的细节，因为自己观察不细致，也没有发现...导致所有的bug都只能一点点发现

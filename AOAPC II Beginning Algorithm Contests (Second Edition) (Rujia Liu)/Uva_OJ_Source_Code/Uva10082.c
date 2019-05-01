@@ -11,6 +11,5 @@ int main()
         if (s[p]) putchar(s[p - 1]);
         else putchar(c);
     }
-//    printf("Hello World!\n");
     return 0;
 }

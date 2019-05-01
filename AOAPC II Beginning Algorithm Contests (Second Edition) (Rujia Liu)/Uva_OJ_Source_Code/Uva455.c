@@ -18,9 +18,7 @@ int main()
         int begin = 0; //标记起点
         int flag = 0; // 标记，ans 是否满足最小周期
         for (ans = 1;ans <= len;ans++){ //增加ans从1到len
-            /*
-             * 思路为枚举：第一个 ans 周期 和 后面的周期一一比对，全部符合最小周期，则ans为最小周期
-            */
+            // 思路为枚举：第一个 ans 周期 和 后面的周期一一比对，全部符合最小周期，则ans为最小周期
             int tmp = 0;
             if (len % ans == 0) tmp = len / ans - 1; // 如果可以被整除
             else tmp = (int)(len / ans + 0.5); // 无法被整除
@@ -54,22 +52,14 @@ int main()
                 }
                 break;
             }
-        } // end of for
+        }  // end of for
         if (!flag) { // 多组数据的情况，输出格式为每个数据后加一个空行
             if (q + 1 != 1) printf("%d\n\n",ans - 1);
             else printf("%d\n",ans - 1);
         }
-    }//end of while
+    } //end of while
     return 0;
 }
-
-/*
-1
-
-cdfecdfecdf
-
-*/
-
 /*
 * Uva地址：https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=396
 * uDebug地址：https://www.udebug.com/UVa/455
