@@ -9,7 +9,7 @@ int main()
     int q_sum = 0;
     int rows,colums;
     memset(pos,0,sizeof (pos));
-    while (scanf("%d",&rows) && rows != 0) {
+    while (scanf("%d",&rows) && rows != 0){
         scanf("%d",&colums);
         memset(pos,0,sizeof (pos));
         if (q_sum) printf("\n");
@@ -50,8 +50,6 @@ int main()
         for (int m = 1;m <= pos_num;m++){
             for (int i = 0;i < rows * colums;i++){
                 if (pos + i != 0 && (s + i) != '*') printf("  %d",pos + i);
-
-                }
             }
         }
 //        for (int i = 0;i < rows;i++){
